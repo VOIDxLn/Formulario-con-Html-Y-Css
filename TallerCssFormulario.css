@@ -1,0 +1,84 @@
+/* Eliminar margenes y pading del navegador */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Establecer el fondo general de la pagina */
+
+body { 
+    background-color:aquamarine;
+    display: flex; /*Centra el contenido*/
+    justify-content: center; /* centra de forma horizontal*/
+    align-items: center; /*Centra de forma vertical*/
+    height: 100; /* La altura de la pantalla completa */
+}
+
+.container h2{
+    text-align: center;
+}
+
+.container {
+    background-color:white;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius:8px;
+    box-shadow: 0px 4px 15px rgb(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.Form-registro h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+label{
+    display: block; /* Para que cada etiqueta aparezca en una nueva linea*/
+    margin-bottom: 5px; /*Espacio entre el label y el input*/
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="password"]{
+    width: 100%; /* Ancho del input a todo el container*/
+    padding: 1px;  /* Añade un espacio interno para que el texto no este pegado al input */
+    padding-bottom: 15px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+input[type="submit"]{
+    background-color:cornflowerblue;
+    color:white;
+    border: none;
+    padding: 10px 20px; /* Ancho y largo del boton */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:dodgerblue;
+}
+
+input[type="reset"]{
+    background-color:cornflowerblue;
+    color:white;
+    border: none;
+    padding: 10px 20px; /* Ancho y largo del boton */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover{
+    background-color:dodgerblue;
+}
